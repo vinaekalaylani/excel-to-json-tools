@@ -19,7 +19,7 @@ import {
 } from "store/constants/app";
 
 const initialState = {
-    url: "http://10.10.10.101:8181/cpm-ticketing-flm/api/web/v1",
+    url: "http://10.10.10.101:8080/cpm-ticketing-flm/api/web/v1",
 
     catStaff: [],
     catState: [
@@ -6625,7 +6625,160 @@ const initialState = {
         }
     ],
     catBranchArea: [],
-    catClient: [],
+    catClient: [
+        {
+            "id": 1,
+            "code": "BRI",
+            "name": "Bank Rakyat Indonesia",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        },
+        {
+            "id": 2,
+            "code": "BMRI",
+            "name": "Bank Mandiri",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        },
+        {
+            "id": 3,
+            "code": "OCBC",
+            "name": "Bank OCBC NISP",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        },
+        {
+            "id": 4,
+            "code": "JTRU",
+            "name": "J Trust Bank",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        },
+        {
+            "id": 5,
+            "code": "MEGA",
+            "name": "Bank Mega",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        },
+        {
+            "id": 6,
+            "code": "MAS",
+            "name": "Bank MAS",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        },
+        {
+            "id": 7,
+            "code": "DMON",
+            "name": "Bank Danamon",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        },
+        {
+            "id": 8,
+            "code": "BMI",
+            "name": "Bank Muamalat",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        },
+        {
+            "id": 9,
+            "code": "BUKO",
+            "name": "Bank Bukopin",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        },
+        {
+            "id": 10,
+            "code": "PNIN",
+            "name": "Panin Bank",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        },
+        {
+            "id": 11,
+            "code": "PNSY",
+            "name": "Bank Panin Dubai Syariah",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        },
+        {
+            "id": 12,
+            "code": "BSSB",
+            "name": "BPD Sulselbar",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        },
+        {
+            "id": 13,
+            "code": "BJTG",
+            "name": "BPD Jateng",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        },
+        {
+            "id": 14,
+            "code": "DPOS",
+            "name": "Depos",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        },
+        {
+            "id": 15,
+            "code": "PAT",
+            "name": "PT Pacific Agung Trijaya",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        },
+        {
+            "id": 16,
+            "code": "DHB",
+            "name": "PT Dompet Harapan Bangsa",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        },
+        {
+            "id": 17,
+            "code": "NNA",
+            "name": "PT Niaga Nusa Abadi",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        },
+        {
+            "id": 18,
+            "code": "TNS",
+            "name": "PT Tumbakmas Niaga Sakti",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        },
+        {
+            "id": 19,
+            "code": "MNV",
+            "name": "PT Manuva",
+            "color": "#555555",
+            "status": 1,
+            "notes": ""
+        }
+    ],
     catMachine: [],
     catMachineType: [
         {

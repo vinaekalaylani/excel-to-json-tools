@@ -249,6 +249,29 @@ export function createOrUpdateMachine(encrypted, isCreate = false) {
     };
 }
 
+export function createOrUpdateStaff(encrypted, branchId) {
+    return (dispatch, getState) => {
+        dispatch(setIsLoading(true))
+        return new Promise((resolve, reject) => {
+            axios({
+                method: "POST",
+                url: "http://localhost:3000/person",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                data: encrypted,
+            })
+                .then(({ data }) => {
+                    resolve({ ...data, branchId })
+                })
+                .catch(({ message }) => {
+                    dispatch(setIsError(message))
+                    reject(message);
+                })
+        });
+    };
+}
+
 export function getConfig(url) {
     return (dispatch, getState) => {
         dispatch(setIsLoading(true))

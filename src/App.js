@@ -5,6 +5,7 @@ import useWindowSize from "hooks/window-size";
 import Page from "./pages";
 
 import { ConfigProvider, message } from "antd";
+import StaffPage from "pages/staff";
 
 export default function App() {
 	/* Store Data */
@@ -35,13 +36,25 @@ export default function App() {
 	const element = useRoutes([
 		{
 			path: "/",
-			element: <Page
-				token="5234aac6d7214edbb34b463ec041621d65fe8e5c"
-				height={height}
-				width={width}
-				notif={notif}>
-				<Outlet />
-			</Page>
+			element: (
+				<Page
+					height={height}
+					width={width}
+					notif={notif}>
+					<Outlet />
+				</Page>
+			)
+		},
+		{
+			path: "/user",
+			element: (
+				<StaffPage
+					height={height}
+					width={width}
+					notif={notif}>
+					<Outlet />
+				</StaffPage>
+			)
 		},
 	])
 
